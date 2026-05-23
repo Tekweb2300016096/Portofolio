@@ -1,0 +1,169 @@
+.resume-section {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 8% 10%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+}
+
+.resume-content {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+}
+
+.resume-heading {
+  font-family: var(--display-font);
+  font-size: 1.6vw;
+  font-weight: 900;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.resume-heading-icon {
+  width: 20px;
+}
+
+.resume-item {
+  margin-bottom: 35px;
+}
+
+.resume-item.small-mb {
+  margin-bottom: 20px;
+}
+
+.resume-year {
+  color: #3b82f6;
+  font-size: 0.8vw;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.resume-title {
+  font-family: var(--display-font);
+  font-size: 1.2vw;
+  font-weight: 900;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.resume-desc {
+  font-size: 0.85vw;
+  color: #6b7280;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* Education styling */
+.edu-title {
+  font-family: var(--primary-font);
+  font-size: 0.9vw;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.edu-year {
+  font-size: 0.8vw;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* Skills */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-pill {
+  border: 2px solid var(--text-dark);
+  border-radius: 50px;
+  padding: 6px 18px;
+  font-size: 0.75vw;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--text-dark);
+}
+
+.resume-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #d1d5db;
+  margin: 35px 0;
+}
+
+/* Interests */
+.interests-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.interest-item {
+  border: 2px solid var(--text-dark);
+  border-radius: 40px;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.interest-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.interest-text {
+  font-size: 0.65vw;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--text-dark);
+}
+
+/* Contact */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85vw;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.contact-item svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .resume-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .resume-heading { font-size: 6vw; }
+  .resume-year { font-size: 3.5vw; }
+  .resume-title { font-size: 5vw; }
+  .resume-desc, .edu-title, .edu-year { font-size: 3.5vw; }
+  .skill-pill { font-size: 3vw; }
+  .interest-text { font-size: 3vw; }
+  .contact-item { font-size: 3.5vw; }
+}

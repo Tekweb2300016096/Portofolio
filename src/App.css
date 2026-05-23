@@ -1,0 +1,126 @@
+.dashboard-minimal {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5% 1.5% 5%;
+  border-bottom: 1px solid rgba(7, 21, 39, 0.1);
+  margin: 0 4%;
+}
+
+.header-left, .header-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.subtitle {
+  font-size: 0.7vw;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-grey);
+  margin-bottom: 2px;
+}
+
+.title-name {
+  font-family: var(--display-font);
+  font-size: 1.1vw;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  margin-top: -5%;
+  width: 50vw;
+}
+
+.porto-folio-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Decorative Elements */
+.dec-icon {
+  position: absolute;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.question-tl {
+  width: 1.5vw;
+  top: 15%;
+  left: 20%;
+  filter: grayscale(100%) contrast(2) brightness(0.2);
+}
+
+.question-tr {
+  width: 1.5vw;
+  top: 18%;
+  right: 22%;
+  filter: grayscale(100%) contrast(2) brightness(0.2);
+}
+
+.question-bl {
+  width: 1.2vw;
+  bottom: 25%;
+  left: 32%;
+}
+
+.question-br {
+  width: 1.2vw;
+  bottom: 30%;
+  right: 25%;
+}
+
+.squiggle-left {
+  width: 5vw;
+  top: 45%;
+  left: 28%;
+}
+
+.sun-right {
+  width: 4vw;
+  top: 48%;
+  right: 26%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header { margin: 0 2%; padding: 5% 2% 3% 2%; }
+  .subtitle { font-size: 2.5vw; }
+  .title-name { font-size: 3.5vw; }
+  
+  .portfolio-text-container { width: 80vw; }
+  
+  .question-tl { width: 5vw; top: 10%; left: 10%; }
+  .question-tr { width: 5vw; top: 10%; right: 10%; }
+  .question-bl { width: 4vw; bottom: 20%; left: 15%; }
+  .question-br { width: 4vw; bottom: 25%; right: 10%; }
+  
+  .squiggle-left { width: 12vw; top: 40%; left: 10%; }
+  .sun-right { width: 10vw; top: 45%; right: 10%; }
+}

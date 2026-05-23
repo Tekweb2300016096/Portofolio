@@ -1,0 +1,133 @@
+.about-section {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+.about-content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 8%;
+  align-items: center;
+}
+
+/* Left side: Photo with frame image */
+.about-photo-wrapper {
+  position: relative;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo-combined {
+  width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.1));
+}
+
+/* Right side: Text */
+.about-text-wrapper {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.about-heading-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.about-title {
+  font-family: var(--display-font);
+  font-size: 5vw;
+  font-weight: 900;
+  color: var(--text-dark);
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.about-icon-heading {
+  width: 25px;
+  height: 25px;
+}
+
+.about-subtitle {
+  font-family: var(--display-font);
+  font-size: 1.6vw;
+  font-weight: 700;
+  font-style: italic;
+  color: #3b82f6; /* Blue matching the icons */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.about-line {
+  width: 50px;
+  height: 3px;
+  background-color: #3b82f6;
+  margin-bottom: 40px;
+}
+
+.about-description {
+  font-size: 1.1vw;
+  line-height: 1.8;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.dropcap {
+  float: left;
+  font-family: var(--primary-font);
+  font-size: 5vw;
+  line-height: 0.8;
+  font-weight: 800;
+  color: #4b5563;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.about-quote {
+  margin-top: 40px;
+  padding-left: 20px;
+  border-left: 3px solid #3b82f6;
+  font-size: 0.95vw;
+  font-style: italic;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.about-icon-tr {
+  position: absolute;
+  top: -10%;
+  right: 5%;
+  width: 20px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .about-photo-wrapper {
+    width: 80%;
+  }
+  .about-text-wrapper {
+    width: 100%;
+  }
+  .about-title { font-size: 12vw; }
+  .about-subtitle { font-size: 4vw; }
+  .dropcap { font-size: 15vw; }
+  .about-description { font-size: 3.5vw; }
+  .about-quote { font-size: 3vw; margin-top: 30px; }
+  .about-line { margin-bottom: 20px; }
+}
