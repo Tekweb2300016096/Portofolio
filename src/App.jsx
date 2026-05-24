@@ -368,7 +368,7 @@ function App() {
         <div className="gallery-line" data-aos="fade-right" data-aos-delay="100"></div>
 
         <div data-aos="fade-up" data-aos-delay="200" style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '30px', width: '100%'}}>
-          {[1, 2].map(num => (
+          {[1, 2, 3].map(num => (
             <img 
               key={`flyer-${num}`}
               src={`/assets/flyer-${num}.png`} 
