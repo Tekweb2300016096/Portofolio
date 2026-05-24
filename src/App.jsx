@@ -348,6 +348,39 @@ function App() {
         </div>
       </section>
 
+      {/* Flyer Portfolio Section */}
+      <section className="ui-portfolio-section" style={{minHeight: 'auto'}}>
+        <div className="gallery-header" data-aos="fade-up">
+          <div className="gallery-header-left">
+            <div className="gallery-subtitle">
+              <img src="/assets/question.png" alt="?" className="gallery-icon" />
+              GALERI PORTFOLIO SAYA
+            </div>
+            <h2 className="gallery-title">KARYA FLYER SAYA</h2>
+          </div>
+          <div className="gallery-header-right">
+            <p className="gallery-desc">
+              Koleksi karya design flyer yang saya buat secara pribadi
+            </p>
+          </div>
+        </div>
+        
+        <div className="gallery-line" data-aos="fade-right" data-aos-delay="100"></div>
+
+        <div data-aos="fade-up" data-aos-delay="200" style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '30px', width: '100%'}}>
+          {[1, 2].map(num => (
+            <img 
+              key={`flyer-${num}`}
+              src={`/assets/flyer-${num}.png`} 
+              alt={`Flyer ${num}`} 
+              className="ui-grid-item" 
+              style={{width: 'auto', maxWidth: '100%', maxHeight: '80vh', marginBottom: 0}}
+              onClick={() => setSelectedImage(`/assets/flyer-${num}.png`)}
+            />
+          ))}
+        </div>
+      </section>
+
       {/* UI Portfolio Section */}
       <section className="ui-portfolio-section">
         <div className="gallery-header" data-aos="fade-up">
