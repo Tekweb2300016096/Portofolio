@@ -1,5 +1,5 @@
 .portfolio-gallery-section {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   padding: 8% 8% 5% 8%;
   background-color: var(--bg-color);
@@ -160,7 +160,7 @@
 
 /* UI Portfolio Section */
 .ui-portfolio-section {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   padding: 5% 10%;
   background-color: var(--bg-color);
@@ -277,5 +277,9 @@
   .gallery-title { font-size: 2rem; }
   .gallery-desc { font-size: 3.5vw; }
   .gallery-item { width: 70vw; }
-  .ui-project-title { font-size: 3rem; }
+  .ui-project-title { 
+    font-size: 2rem; 
+    text-align: center;
+    line-height: 1.2;
+  }
 }

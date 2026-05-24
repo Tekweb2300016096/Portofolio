@@ -179,7 +179,7 @@ function App() {
 
           {/* Column 2 */}
           <div className="resume-col" data-aos="fade-up" data-aos-delay="200">
-            <div className="resume-item" style={{marginTop: '55px'}}>
+            <div className="resume-item resume-item-offset">
               <div className="resume-year">2025</div>
               <div className="resume-title">ORGANISASI</div>
               <div className="resume-desc">Program Mahasiswa Berdampak Koordinator Logistik</div>

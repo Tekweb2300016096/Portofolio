@@ -1,5 +1,5 @@
 .resume-section {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   padding: 8% 10%;
   background-color: var(--bg-color);
@@ -37,6 +37,10 @@
 
 .resume-item.small-mb {
   margin-bottom: 20px;
+}
+
+.resume-item-offset {
+  margin-top: 55px;
 }
 
 .resume-year {
@@ -158,6 +162,9 @@
   .resume-content {
     grid-template-columns: 1fr;
     gap: 50px;
+  }
+  .resume-item-offset {
+    margin-top: 0;
   }
   .resume-heading { font-size: 6vw; }
   .resume-year { font-size: 3.5vw; }
